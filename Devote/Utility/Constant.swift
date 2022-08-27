@@ -9,9 +9,9 @@ import SwiftUI
 
 //MARK: - Formatter
 let itemFormatter: DateFormatter = {
-  let formatter = DateFormatter()
-  formatter.dateStyle = .short
-  formatter.timeStyle = .medium
-  return formatter
+    let formatter = DateFormatter()
+    formatter.dateStyle = .long
+    formatter.timeStyle = .short
+    return formatter
 }()
 
