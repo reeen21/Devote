@@ -22,6 +22,8 @@
 		4B76E43528B90CF900DA182A /* DevoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B76E43428B90CF900DA182A /* DevoteTests.swift */; };
 		4B76E43F28B90CF900DA182A /* DevoteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B76E43E28B90CF900DA182A /* DevoteUITests.swift */; };
 		4B76E44128B90CF900DA182A /* DevoteUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B76E44028B90CF900DA182A /* DevoteUITestsLaunchTests.swift */; };
+		4BFE33AB28BF37C300BFF6B6 /* NewTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFE33AA28BF37C300BFF6B6 /* NewTaskView.swift */; };
+		4BFE33AD28BF3E0F00BFF6B6 /* BlankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFE33AC28BF3E0F00BFF6B6 /* BlankView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		4B76E43A28B90CF900DA182A /* DevoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DevoteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B76E43E28B90CF900DA182A /* DevoteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevoteUITests.swift; sourceTree = "<group>"; };
 		4B76E44028B90CF900DA182A /* DevoteUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevoteUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4BFE33AA28BF37C300BFF6B6 /* NewTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskView.swift; sourceTree = "<group>"; };
+		4BFE33AC28BF3E0F00BFF6B6 /* BlankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlankView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,8 @@
 			isa = PBXGroup;
 			children = (
 				4B76E42028B90CF400DA182A /* ContentView.swift */,
+				4BFE33AC28BF3E0F00BFF6B6 /* BlankView.swift */,
+				4BFE33AA28BF37C300BFF6B6 /* NewTaskView.swift */,
 				4B3F3B0428BA4FA6008199AC /* BackGroundImageView.swift */,
 			);
 			path = View;
@@ -327,9 +333,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B76E42828B90CF900DA182A /* Persistence.swift in Sources */,
+				4BFE33AD28BF3E0F00BFF6B6 /* BlankView.swift in Sources */,
 				4B76E42128B90CF400DA182A /* ContentView.swift in Sources */,
 				4B3F3AFF28B9E58F008199AC /* Constant.swift in Sources */,
 				4B76E42B28B90CF900DA182A /* Devote.xcdatamodeld in Sources */,
+				4BFE33AB28BF37C300BFF6B6 /* NewTaskView.swift in Sources */,
 				4B3F3B0528BA4FA6008199AC /* BackGroundImageView.swift in Sources */,
 				4B3F3B0328BA3D21008199AC /* HideKeyboard.swift in Sources */,
 				4B76E41F28B90CF400DA182A /* DevoteApp.swift in Sources */,
