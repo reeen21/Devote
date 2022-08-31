@@ -13,6 +13,7 @@ struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
     @State var task: String = ""
     @State private var showNewTasks: Bool = false
+    @AppStorage("isDarkMode") private var isDarkMode: Bool = false
     
     //MARK: - Fetching data
     @FetchRequest(
@@ -41,6 +42,36 @@ struct ContentView: View {
             ZStack {
                 VStack {
                     //Header
+                    HStack(spacing: 10) {
+                        //title
+                        Text("Devote")
+                            .font(.system(.largeTitle, design: .rounded))
+                            .fontWeight(.heavy)
+                            .padding(.leading, 4)
+                        Spacer()
+                        
+                        //edit
+                        EditButton()
+                            .font(.system(size: 16, weight: .semibold, design: .rounded))
+                            .padding(.horizontal, 10)
+                            .frame(minWidth: 70, minHeight: 24)
+                            .background(
+                                Capsule().stroke(Color.white, lineWidth: 2)
+                            )
+                        
+                        //appearance
+                        Button {
+                            isDarkMode.toggle()
+                        } label: {
+                            Image(systemName: isDarkMode ? "moon.circle.fill" : "moon.circle")
+                                .resizable()
+                                .frame(width: 24, height: 24)
+                                .font(.system(.title, design: .rounded))
+                        }
+
+                    }
+                    .padding()
+                    .foregroundColor(.white)
                     Spacer(minLength: 80)
                     
                     //NewTaskButton
@@ -62,7 +93,6 @@ struct ContentView: View {
                     .shadow(color: Color(red: 0, green: 0, blue: 0, opacity: 0.25), radius: 8, x: 0.0, y: 4.0)
                     
                     //Tasks
-                    
                     
                     List {
                         ForEach(items) { item in
@@ -99,13 +129,7 @@ struct ContentView: View {
             }
             .navigationTitle("Daily Tasks")
             .navigationBarTitleDisplayMode(.large)
-            .toolbar {
-#if os(iOS)
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-#endif
-            }
+            .navigationBarHidden(true)
             .background(
                 BackGroundImageView()
             )

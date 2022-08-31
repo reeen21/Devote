@@ -11,6 +11,7 @@ struct NewTaskView: View {
     @Environment(\.managedObjectContext) private var viewContext
     @State private var task: String = ""
     @Binding var isShowing: Bool
+    @AppStorage("isDarkMode") private var isDarkMode: Bool = false
     
     private var isButtonDisabled: Bool {
         task.isEmpty
@@ -44,7 +45,7 @@ struct NewTaskView: View {
                     .foregroundColor(.pink)
                     .font(.system(size: 24, weight: .bold, design: .rounded))
                     .background(
-                        Color(uiColor: .systemGray6)
+                        isDarkMode ? Color(uiColor: .tertiarySystemBackground) : Color(uiColor: .secondarySystemBackground)
                     )
                     .cornerRadius(10)
                 
@@ -64,7 +65,9 @@ struct NewTaskView: View {
             }
             .padding(.horizontal)
             .padding(.vertical, 20)
-            .background(Color.white)
+            .background(
+                isDarkMode ? Color(uiColor: .secondarySystemBackground) : Color(uiColor: .white)
+            )
             .cornerRadius(16)
             .shadow(color: Color(red: 0, green:0, blue: 0, opacity: 0.65), radius: 24)
             .frame(maxWidth: 640)
