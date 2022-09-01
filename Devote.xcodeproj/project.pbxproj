@@ -22,6 +22,8 @@
 		4B76E43528B90CF900DA182A /* DevoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B76E43428B90CF900DA182A /* DevoteTests.swift */; };
 		4B76E43F28B90CF900DA182A /* DevoteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B76E43E28B90CF900DA182A /* DevoteUITests.swift */; };
 		4B76E44128B90CF900DA182A /* DevoteUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B76E44028B90CF900DA182A /* DevoteUITestsLaunchTests.swift */; };
+		4BF28CBB28C0734A0050F0F1 /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF28CBA28C0734A0050F0F1 /* ListRowView.swift */; };
+		4BF28CBE28C076D20050F0F1 /* CheckBoxStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF28CBD28C076D20050F0F1 /* CheckBoxStyle.swift */; };
 		4BFE33AB28BF37C300BFF6B6 /* NewTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFE33AA28BF37C300BFF6B6 /* NewTaskView.swift */; };
 		4BFE33AD28BF3E0F00BFF6B6 /* BlankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFE33AC28BF3E0F00BFF6B6 /* BlankView.swift */; };
 /* End PBXBuildFile section */
@@ -63,6 +65,8 @@
 		4B76E43A28B90CF900DA182A /* DevoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DevoteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B76E43E28B90CF900DA182A /* DevoteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevoteUITests.swift; sourceTree = "<group>"; };
 		4B76E44028B90CF900DA182A /* DevoteUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevoteUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4BF28CBA28C0734A0050F0F1 /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
+		4BF28CBD28C076D20050F0F1 /* CheckBoxStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxStyle.swift; sourceTree = "<group>"; };
 		4BFE33AA28BF37C300BFF6B6 /* NewTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskView.swift; sourceTree = "<group>"; };
 		4BFE33AC28BF3E0F00BFF6B6 /* BlankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlankView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,6 +112,7 @@
 				4BFE33AC28BF3E0F00BFF6B6 /* BlankView.swift */,
 				4BFE33AA28BF37C300BFF6B6 /* NewTaskView.swift */,
 				4B3F3B0428BA4FA6008199AC /* BackGroundImageView.swift */,
+				4BF28CBA28C0734A0050F0F1 /* ListRowView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -166,6 +171,7 @@
 				4B76E42228B90CF900DA182A /* Assets.xcassets */,
 				4B3F3AF828B9E156008199AC /* View */,
 				4B3F3AFD28B9E568008199AC /* Utility */,
+				4BF28CBC28C076B70050F0F1 /* Style */,
 				4B3F3AF728B9E0C2008199AC /* Model */,
 				4B3F3B0628BA5053008199AC /* SOUNDS */,
 				4B3F3B0128BA3CEF008199AC /* Extension */,
@@ -197,6 +203,14 @@
 				4B76E44028B90CF900DA182A /* DevoteUITestsLaunchTests.swift */,
 			);
 			path = DevoteUITests;
+			sourceTree = "<group>";
+		};
+		4BF28CBC28C076B70050F0F1 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				4BF28CBD28C076D20050F0F1 /* CheckBoxStyle.swift */,
+			);
+			path = Style;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -336,9 +350,11 @@
 				4BFE33AD28BF3E0F00BFF6B6 /* BlankView.swift in Sources */,
 				4B76E42128B90CF400DA182A /* ContentView.swift in Sources */,
 				4B3F3AFF28B9E58F008199AC /* Constant.swift in Sources */,
+				4BF28CBB28C0734A0050F0F1 /* ListRowView.swift in Sources */,
 				4B76E42B28B90CF900DA182A /* Devote.xcdatamodeld in Sources */,
 				4BFE33AB28BF37C300BFF6B6 /* NewTaskView.swift in Sources */,
 				4B3F3B0528BA4FA6008199AC /* BackGroundImageView.swift in Sources */,
+				4BF28CBE28C076D20050F0F1 /* CheckBoxStyle.swift in Sources */,
 				4B3F3B0328BA3D21008199AC /* HideKeyboard.swift in Sources */,
 				4B76E41F28B90CF400DA182A /* DevoteApp.swift in Sources */,
 			);
